@@ -20,11 +20,16 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
-      - run: pip install -e .
+      - name: Install dependencies
+        run: pip install .
       - name: Lint
-        run: ruff check .
+        run: |
+          pip install ruff
+          ruff check .
       - name: Mypy
-        run: mypy --install-types --non-interactive .
+        run: |
+          pip install mypy
+          mypy --install-types --non-interactive .
       - name: Test
         run: |
           pip install pytest pytest-cov

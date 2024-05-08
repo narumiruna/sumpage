@@ -20,7 +20,7 @@ PROMPT_TEMPLATE = """使用台灣用語的繁體中文，幫以下的文章以�
 
 @functools.cache
 def get_chain() -> LLMChain:
-    llm = ChatOpenAI(temperature=0, model_name="gpt-4-turbo")
+    llm = ChatOpenAI(temperature=0, model="gpt-4-turbo")
     prompt = PromptTemplate.from_template(PROMPT_TEMPLATE)
     chain = LLMChain(llm=llm, prompt=prompt)
     return chain
@@ -35,4 +35,4 @@ def summarize_html(f: str) -> str:
     text = "\n".join([doc.page_content for doc in docs])
 
     chain = get_chain()
-    return chain.invoke(text)["text"]
+    return chain.invoke({"text": text})["text"]

@@ -20,17 +20,13 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
+      - run: pip install -e .
       - name: Lint
-        run: |
-          pip install ruff
-          ruff check .
+        run: ruff check .
       - name: Mypy
-        run: |
-          pip install mypy
-          mypy --install-types --non-interactive .
+        run: mypy --install-types --non-interactive .
       - name: Test
         run: |
-          pip install .
           pip install pytest pytest-cov
           pytest -v -s --cov=. --cov-report=xml tests
       - name: Upload coverage reports to Codecov

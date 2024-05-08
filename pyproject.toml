@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "summarize"
+name = "html_summary"
 version = "0.1.0"
 description = ""
 authors = ["narumi <toucans-cutouts0f@icloud.com>"]
@@ -24,7 +24,7 @@ toml = "^0.10.2"
 mypy = "^1.8.0"
 
 [tool.poetry.scripts]
-summarize = "summarize.cli:main"
+html-summary = "html_summary.cli:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

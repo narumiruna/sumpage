@@ -30,7 +30,7 @@ def summarize_html(f: str) -> str:
     logger.info("summarize html: {}", f)
 
     loader = BSHTMLLoader(f)
-    docs: list[Document] = loader.load()
+    docs = loader.load()
 
     text = "\n".join([doc.page_content for doc in docs])
 

@@ -11,10 +11,10 @@ from loguru import logger
 set_llm_cache(SQLiteCache())
 
 
-PROMPT_TEMPLATE = """使用台灣用語的繁體中文，幫以下的文章以條列的方式，寫簡潔的摘要：
+PROMPT_TEMPLATE = """Write a concise summary in bullet points using {lang} for the following article:
 {text}
 
-摘要："""
+Summary:"""
 
 
 @functools.cache
@@ -25,7 +25,7 @@ def get_chain() -> LLMChain:
     return chain
 
 
-def summarize_html(f: str) -> str:
+def summarize_html(f: str, lang: str = "English") -> str:
     logger.info("summarize html: {}", f)
 
     loader = BSHTMLLoader(f)
@@ -34,4 +34,4 @@ def summarize_html(f: str) -> str:
     text = "\n".join([doc.page_content for doc in docs])
 
     chain = get_chain()
-    return chain.invoke({"text": text})["text"]
+    return chain.invoke({"text": text, "lang": lang})["text"]

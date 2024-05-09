@@ -3,7 +3,7 @@
 ## Installation
 
 ```shell
-pip install http-summary
+pip install html-summary
 ```
 
 ## Usage

@@ -4,7 +4,6 @@ from langchain.cache import SQLiteCache
 from langchain.chains.llm import LLMChain
 from langchain.globals import set_llm_cache
 from langchain_community.document_loaders.html_bs import BSHTMLLoader
-from langchain_core.documents import Document
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 from loguru import logger

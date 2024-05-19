@@ -1,5 +1,5 @@
 import os
-from tempfile import gettempdir
+import tempfile
 
 import click
 import httpx
@@ -10,20 +10,28 @@ from loguru import logger
 from .summary import summarize_html
 
 
+def fetch_content(path: str) -> str:
+    if path.startswith("http"):
+        resp = httpx.get(url=path)
+        resp.raise_for_status()
+
+        with tempfile.NamedTemporaryFile(delete=False) as fp:
+            fp.write(resp.content)
+            f = fp.name
+    else:
+        f = path
+    return f
+
+
 @click.command()
-@click.argument("url", type=click.STRING)
+@click.argument("path", type=click.STRING)
 @click.option("-l", "--lang", type=click.STRING, default="English")
-def main(url: str, lang: str) -> None:
+def main(path: str, lang: str) -> None:
     load_dotenv(find_dotenv())
 
     lang = os.getenv("HTML_SUMMARY_LANG", lang)
 
-    resp = httpx.get(url=url)
-    resp.raise_for_status()
-
-    f = os.path.join(gettempdir(), "temp.html")
-    with open(f, "wb") as fp:
-        fp.write(resp.content)
+    f = fetch_content(path)
 
     s = summarize_html(f, lang)
     logger.info("summarization:\n{}", s)

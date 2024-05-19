@@ -1,8 +1,8 @@
 import functools
 
-from langchain.cache import SQLiteCache
 from langchain.chains.llm import LLMChain
 from langchain.globals import set_llm_cache
+from langchain_community.cache import SQLiteCache
 from langchain_community.document_loaders.html_bs import BSHTMLLoader
 from langchain_core.messages import AIMessage
 from langchain_core.prompts import PromptTemplate

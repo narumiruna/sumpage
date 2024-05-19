@@ -10,5 +10,5 @@ pip install html-summary
 
 ```shell
 export OPENAI_API_KEY=
-html-summary <url>
+html-summary <url-or-filepath>
 ```

@@ -1,4 +1,5 @@
 import functools
+from pathlib import Path
 
 from langchain.chains.llm import LLMChain
 from langchain.globals import set_llm_cache
@@ -9,7 +10,9 @@ from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 from loguru import logger
 
-set_llm_cache(SQLiteCache())
+database_path = Path.home() / ".cache" / ".langchain.db"
+cache = SQLiteCache(database_path.as_posix())
+set_llm_cache(cache)
 
 
 PROMPT_TEMPLATE = """Write a concise summary in bullet points using {lang} for the following article:

@@ -23,7 +23,7 @@ Summary:"""
 
 @functools.cache
 def get_chain() -> RunnableSerializable:
-    llm = ChatOpenAI(temperature=0, model="gpt-4-turbo")
+    llm = ChatOpenAI(temperature=0, model="gpt-4o")
     prompt = PromptTemplate.from_template(PROMPT_TEMPLATE)
     chain = prompt | llm
     return chain

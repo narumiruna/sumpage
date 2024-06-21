@@ -14,7 +14,10 @@ from .summary import summarize
 
 def fetch_content(path: str) -> str:
     if path.startswith("http"):
-        resp = httpx.get(url=path)
+        headers = {
+            "User-Agent": "Chrome/126.0.0.0 Safari/537.36",
+        }
+        resp = httpx.get(url=path, headers=headers)
         resp.raise_for_status()
 
         with tempfile.NamedTemporaryFile(delete=False) as fp:

@@ -1,15 +1,15 @@
-# HTML Summary
+# sumpage
 
 ## Installation
 
 ```shell
-pip install html-summary
+pip install sumpage
 ```
 
 ## Usage
 
 ```shell
 export OPENAI_API_KEY=
-export HTML_SUMMARY_LANG=English
-html-summary <url-or-filepath>
+export SUMPAGE_LANG=English
+sumpage <url-or-filepath>
 ```

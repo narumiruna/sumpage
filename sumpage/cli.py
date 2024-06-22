@@ -35,7 +35,7 @@ def fetch_content(path: str) -> str:
 def main(path: str, lang: str, pdf: bool) -> None:
     load_dotenv(find_dotenv())
 
-    lang = os.getenv("HTML_SUMMARY_LANG", lang)
+    lang = os.getenv("SUMPAGE_LANG", lang)
 
     f = fetch_content(path)
 

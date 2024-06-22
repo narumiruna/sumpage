@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "html_summary"
+name = "sumpage"
 version = "0.3.1"
 description = ""
 authors = ["narumi <toucans-cutouts0f@icloud.com>"]
@@ -27,7 +27,7 @@ toml = "^0.10.2"
 mypy = "^1.8.0"
 
 [tool.poetry.scripts]
-html-summary = "html_summary.cli:main"
+sumpage = "sumpage.cli:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

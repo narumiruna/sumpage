@@ -907,20 +907,17 @@ tiktoken = ">=0.7,<1"
 
 [[package]]
 name = "langchain-text-splitters"
-version = "0.2.1"
+version = "0.2.2"
 description = "LangChain text splitting utilities"
 optional = false
 python-versions = "<4.0,>=3.8.1"
 files = [
-    {file = "langchain_text_splitters-0.2.1-py3-none-any.whl", hash = "sha256:c2774a85f17189eaca50339629d2316d13130d4a8d9f1a1a96f3a03670c4a138"},
-    {file = "langchain_text_splitters-0.2.1.tar.gz", hash = "sha256:06853d17d7241ecf5c97c7b6ef01f600f9b0fb953dd997838142a527a4f32ea4"},
+    {file = "langchain_text_splitters-0.2.2-py3-none-any.whl", hash = "sha256:1c80d4b11b55e2995f02d2a326c0323ee1eeff24507329bb22924e420c782dff"},
+    {file = "langchain_text_splitters-0.2.2.tar.gz", hash = "sha256:a1e45de10919fa6fb080ef0525deab56557e9552083600455cb9fa4238076140"},
 ]
 
 [package.dependencies]
-langchain-core = ">=0.2.0,<0.3.0"
-
-[package.extras]
-extended-testing = ["beautifulsoup4 (>=4.12.3,<5.0.0)", "lxml (>=4.9.3,<6.0)"]
+langchain-core = ">=0.2.10,<0.3.0"
 
 [[package]]
 name = "langsmith"
@@ -2699,4 +2696,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "3efae4a68a54c49cc867c96708dfbcc4b78cfcd1290fb44090b3e59302158b60"
+content-hash = "e345b32bb20786a082f38e2143746dc6d8430c5e5e5c8263a09fc1541e4d92c2"

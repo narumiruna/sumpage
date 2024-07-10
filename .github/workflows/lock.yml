@@ -1,9 +1,9 @@
-name: Lock
+name: Update poetry.lock
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches: ["main"]
+  schedule:
+    - cron: "0 0 */1 * *"
 
 jobs:
   poetry-lock:
@@ -28,3 +28,5 @@ jobs:
           rm poetry.lock
           poetry lock
       - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update poetry.lock"

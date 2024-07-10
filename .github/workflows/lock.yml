@@ -24,5 +24,7 @@ jobs:
         with:
           poetry-version: ${{ matrix.poetry-version }}
           cache: true
-      - run: poetry lock
+      - run: |
+          rm poetry.lock
+          poetry lock
       - uses: stefanzweifel/git-auto-commit-action@v5

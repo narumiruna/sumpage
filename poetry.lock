@@ -2131,13 +2131,13 @@ files = [
 
 [[package]]
 name = "soupsieve"
-version = "2.5"
+version = "2.6"
 description = "A modern CSS selector implementation for Beautiful Soup."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "soupsieve-2.5-py3-none-any.whl", hash = "sha256:eaa337ff55a1579b6549dc679565eac1e3d000563bcb1c8ab0d0fefbc0c2cdc7"},
-    {file = "soupsieve-2.5.tar.gz", hash = "sha256:5663d5a7b3bfaeee0bc4372e7fc48f9cff4940b3eec54a6451cc5299f1097690"},
+    {file = "soupsieve-2.6-py3-none-any.whl", hash = "sha256:e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9"},
+    {file = "soupsieve-2.6.tar.gz", hash = "sha256:e2e68417777af359ec65daac1057404a3c8a5455bb8abc36f1a9866ab1a51abb"},
 ]
 
 [[package]]
@@ -2452,13 +2452,13 @@ files = [
 
 [[package]]
 name = "types-jsonschema"
-version = "4.23.0.20240712"
+version = "4.23.0.20240813"
 description = "Typing stubs for jsonschema"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "types-jsonschema-4.23.0.20240712.tar.gz", hash = "sha256:b20db728dcf7ea3e80e9bdeb55e8b8420c6c040cda14e8cf284465adee71d217"},
-    {file = "types_jsonschema-4.23.0.20240712-py3-none-any.whl", hash = "sha256:8c33177ce95336241c1d61ccb56a9964d4361b99d5f1cd81a1ab4909b0dd7cf4"},
+    {file = "types-jsonschema-4.23.0.20240813.tar.gz", hash = "sha256:c93f48206f209a5bc4608d295ac39f172fb98b9e24159ce577dbd25ddb79a1c0"},
+    {file = "types_jsonschema-4.23.0.20240813-py3-none-any.whl", hash = "sha256:be283e23f0b87547316c2ee6b0fd36d95ea30e921db06478029e10b5b6aa6ac3"},
 ]
 
 [package.dependencies]
@@ -2613,13 +2613,13 @@ urllib3 = ">=2"
 
 [[package]]
 name = "types-setuptools"
-version = "71.1.0.20240806"
+version = "71.1.0.20240813"
 description = "Typing stubs for setuptools"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "types-setuptools-71.1.0.20240806.tar.gz", hash = "sha256:ae5e7b4d643ab9e99fc00ac00041804118cabe72a56183c30d524fb064897ad6"},
-    {file = "types_setuptools-71.1.0.20240806-py3-none-any.whl", hash = "sha256:3bd8dd02039be0bb79ad880d8893b8eefcb022fabbeeb61245c61b20c9ab1ed0"},
+    {file = "types-setuptools-71.1.0.20240813.tar.gz", hash = "sha256:94ff4f0af18c7c24ac88932bcb0f5655fb7187a001b7c61e53a1bfdaf9877b54"},
+    {file = "types_setuptools-71.1.0.20240813-py3-none-any.whl", hash = "sha256:d9d9ba2936f5d3b47b59ae9bf65942a60063ac1d6bbee180a8a79fbb43f22ce5"},
 ]
 
 [[package]]

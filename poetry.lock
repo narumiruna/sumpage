@@ -1049,13 +1049,13 @@ langchain-core = ">=0.2.10,<0.3.0"
 
 [[package]]
 name = "langsmith"
-version = "0.1.101"
+version = "0.1.103"
 description = "Client library to connect to the LangSmith LLM Tracing and Evaluation Platform."
 optional = false
 python-versions = "<4.0,>=3.8.1"
 files = [
-    {file = "langsmith-0.1.101-py3-none-any.whl", hash = "sha256:572e2c90709cda1ad837ac86cedda7295f69933f2124c658a92a35fb890477cc"},
-    {file = "langsmith-0.1.101.tar.gz", hash = "sha256:caf4d95f314bb6cd3c4e0632eed821fd5cd5d0f18cb824772fce6d7a9113895b"},
+    {file = "langsmith-0.1.103-py3-none-any.whl", hash = "sha256:ccdc1ed8782bdf930d01f3e3b8596524b7586aec936594d2eb4cbb66f2b9e356"},
+    {file = "langsmith-0.1.103.tar.gz", hash = "sha256:9f16ec3074ae1e16424c44a1ad3f80cd1b1edb30d24da7dc3f6a73d530e3b402"},
 ]
 
 [package.dependencies]
@@ -2482,13 +2482,13 @@ referencing = "*"
 
 [[package]]
 name = "types-pillow"
-version = "10.2.0.20240520"
+version = "10.2.0.20240822"
 description = "Typing stubs for Pillow"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "types-Pillow-10.2.0.20240520.tar.gz", hash = "sha256:130b979195465fa1e1676d8e81c9c7c30319e8e95b12fae945e8f0d525213107"},
-    {file = "types_Pillow-10.2.0.20240520-py3-none-any.whl", hash = "sha256:33c36494b380e2a269bb742181bea5d9b00820367822dbd3760f07210a1da23d"},
+    {file = "types-Pillow-10.2.0.20240822.tar.gz", hash = "sha256:559fb52a2ef991c326e4a0d20accb3bb63a7ba8d40eb493e0ecb0310ba52f0d3"},
+    {file = "types_Pillow-10.2.0.20240822-py3-none-any.whl", hash = "sha256:d9dab025aba07aeb12fd50a6799d4eac52a9603488eca09d7662543983f16c5d"},
 ]
 
 [[package]]
